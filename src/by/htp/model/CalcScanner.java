@@ -21,7 +21,7 @@ public class CalcScanner {
 		try {
 			i = scan.nextInt();
 		} catch (InputMismatchException e) {
-			System.out.println("Ошибка: Введено число не целого типа");
+			System.out.println("РћС€РёР±РєР°: Р’РІРµРґРµРЅРѕ С‡РёСЃР»Рѕ РЅРµ С†РµР»РѕРіРѕ С‚РёРїР°");
 			System.exit(1);
 		}
 		return i;
@@ -32,7 +32,7 @@ public class CalcScanner {
 		try {
 			i = scan.nextFloat();
 		} catch (InputMismatchException e) {
-			System.out.println("Ошибка: Введено число не вещественного типа");
+			System.out.println("РћС€РёР±РєР°: Р’РІРµРґРµРЅРѕ С‡РёСЃР»Рѕ РЅРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ С‚РёРїР°");
 			System.exit(1);
 		}
 		return i;
