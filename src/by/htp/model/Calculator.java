@@ -5,34 +5,34 @@ public class Calculator {
 	private CalcScanner sc = new CalcScanner();
 	
 	public void calcIntNumbers(){
-		System.out.println("Введите целое число 1:");
+		System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ 1:");
 		int int_num1 = sc.enterInt();
-		System.out.println("Введите целое число 2:");
+		System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ 2:");
 		int int_num2 = sc.enterInt();
 		String sign = enterAction();
 		result(int_num1, int_num2, sign);
 	}
 	
 	public void calcFloatNumbers(){
-		System.out.println("Введите вещественное число 1:");
+		System.out.println("Р’РІРµРґРёС‚Рµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ 1:");
 		float fl_num1 = sc.enterFloat();
-		System.out.println("Введите вещественное число 2:");
+		System.out.println("Р’РІРµРґРёС‚Рµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ 2:");
 		float fl_num2 = sc.enterFloat();	
 		String sign = enterAction();
 		result(fl_num1, fl_num2, sign);
 	}
 	
 	public void calcStrings(){
-		System.out.println("Введите строку 1:");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ 1:");
 		String str1 = sc.enterString();
-		System.out.println("Введите строку 2:");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ 2:");
 		String str2 = sc.enterString();
 		String sign = enterAction();
 		result(str1, str2, sign);
 	}
 	
 	public String enterAction(){
-		System.out.println("Введите знак действия:");
+		System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°Рє РґРµР№СЃС‚РІРёСЏ:");
 		String sign = sc.enterString();				
 		sign = sign.trim();
 		return sign;
@@ -104,30 +104,30 @@ public class Calculator {
 	}
 	
 	public void printResult(int result){
-		System.out.println("Результат действия: " + result);
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ: " + result);
 		System.out.println("-----------------------------");
 	}
 	
 	public void printResult(float result){
-		System.out.println("Результат действия: " + result);
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ: " + result);
 		System.out.println("-----------------------------");
 	}
 	
 	public void printResult(String result){
-		System.out.println("Результат действия: " + result);
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ: " + result);
 		System.out.println("-----------------------------");
 	}
 	
 	public static void printDivToZeroError(){
-		System.out.println("Ошибка: Деление на ноль не может быть выполнено");
+		System.out.println("РћС€РёР±РєР°: Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІС‹РїРѕР»РЅРµРЅРѕ");
 	}
 	
 	public static void printIncorrectActionError(){
-		System.out.println("Ошибка: Неверно введен знак действия");			
+		System.out.println("РћС€РёР±РєР°: Р’РІРµРґРµРЅ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Р№ Р·РЅР°Рє РґРµР№СЃС‚РІРёСЏ");			
 	}
 	
 	public static void printNullPointerError(){
-		System.out.println("Ошибка: Данные для вычисления не определены");			
+		System.out.println("РћС€РёР±РєР°: Р”Р°РЅРЅС‹Рµ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёР№ РЅРµ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅС‹");			
 	}
 
 	
